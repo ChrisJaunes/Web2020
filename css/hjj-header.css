@@ -1,0 +1,52 @@
+.hjj-navbar{
+	display: flex;
+	filter:alpha(Opacity=80);
+}
+.hjj-navbar ul {
+	margin: 5px 5px;
+	display: flex;
+	list-style: none;
+}
+.hjj-navbar a {
+	position: relative;
+	display: inline-block;
+	margin: 5px 5px;
+	outline: none;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0);
+	font-size: 1.35em;
+	padding: 0 0;
+	
+}
+.hjj-navbar a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: rgba(255,255,255,1);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+.hjj-navbar a:hover::after{
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+.hjj-navbar{
+
+}
+.hjj-navbar{
+	margin-left: auto!important;
+}
