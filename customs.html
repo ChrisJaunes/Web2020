@@ -8,28 +8,64 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no" />
   <meta name="format-detection" content="email=no">
-  <title>风土人情</title>
+  <title>风俗</title>
   <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="./css/imgbox.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="./css/hjj-style.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="./css/hjj-header.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="./css/hjj-screen.css" rel="stylesheet" type="text/css" media="screen">
-   
+  <style>
+    /* Custom Styles */
+    ul.nav-tabs{
+      width: 150px;
+      margin-top: 20px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+      margin: 0;
+      border-top: 1px solid #ddd;
+      width: auto;
+      float: none;
+    }
+    ul.nav-tabs li:first-child{
+      border-top: none;
+    }
+    ul.nav-tabs li a{
+      margin: 0;
+      padding: 8px 16px;
+      line-height:2.5;
+      border-radius: 0;
+    }
+    ul.nav-tabs li.active, ul.nav-tabs li:hover{
+      color: #fff;
+      background: #0088cc;
+      border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li.active, ul.nav-tabs li a:hover{
+      color: #fff;
+    }
+    ul.nav-tabs li:first-child a{
+      border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+      border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+      top: 30px; 
+      position: sticky;
+    }
+    ul.nav-tabs.affix-top{
+      top: 30px; 
+    }
+    div.section-1, div.section-2, div.section-3, div.section-4, div.section-5, div.section-6 {
+      margin-top: 10px;
+    }
+  </style>
   <script src="./js/jquery.min.js"></script>
-  <script src="./js/jquery.imgbox.pack.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/hjj-header.js"></script>
-  <script type="text/javascript">
-		$(document).ready(function() {
-			$("#show1, #show2, #show3, #show4, #show5").imgbox({
-				'speedIn'		: 0,
-				'speedOut'		: 0,
-				'alignment'		: 'center',
-				'overlayShow'	: true,
-				'allowMultiple'	: false
-			});
-		});
-	</script>
 </head>
 <body>
   <div id = "div_header"> </div>
@@ -38,51 +74,159 @@
     <div class="container">
       <div class="main-wrp">
         <div class="artists">
-          <div class="product-grids">
-            <div>
-              <h6>风土人情</h6>
-              <div class="product-grid">
-                <a id='show1' href='images/costums-南音.jpg'><img src="./images/costums-南音.jpg" alt="戏曲文化-南音" /></a>
-                <h4>戏曲</h4>
-                <p>泉州保留的戏曲文化遗产，有梨园戏、高甲戏、打城戏、“嘉礼”戏等剧种，其中较为出名的有：南音、北管、梨园戏和“提线木偶”。</p>
+          <div class="row">
+            <nav class="col-12 col-md-4 col-lg-2" id="myScrollspy">
+              <ul class="nav nav-tabs flex-column affix" id="myScrollspy-ul">
+                <li><a href="#section-1">风土人情</a></li>
+                <li><a href="#section-2">家乡风貌</a></li>
+                <li><a href="#section-3">土特产品</a></li>
+                <li><a href="#section-4">家乡经济</a></li>
+                <li><a href="#section-5">家乡教育</a></li>
+                <li><a href="#section-6">历史名人</a></li>
+                <li><a href="#section-7">联系我们</a></li>
+              </ul>
+            </nav>
+            <div class="col-12 col-md-8 col-lg-10" >
+              <h1>欢迎了解我们的风俗</h1>
+              <div id="section-1">
+                <hr/>
+                <h2 class="mytextshadow">风土人情</h2>
+                <h3>民俗</h3>
+                <p>泉州素有<b>“海滨邹鲁”</b>、<strong>“光明之城”</strong>的美誉。</p>
+                <p>泉州，周为七闽地，历年来出土的西周礼乐器和原始壁画，反映了二三千年前泉州原住民古闽越族人的原始舞蹈风貌。唐朝中期以来，中原人南迁入泉；唐、五代时，不但城郊东湖常有游宴歌舞的记载，南安云台山下还建有常设性歌舞院馆。</p>
+                <p>宋、元时代，泉州成为<i>“市井十洲人”的“富洲”、“乐州”</i>。官府甚至不得不出榜喻民<q>“莫贪浪游，莫看百戏”</q>。</p>
+                <p>泉州保留的戏曲文化遗产，有<i>梨园戏、高甲戏、打城戏、“嘉礼”戏</i>等剧种，其中较为出名的有：<i>南音、北管、梨园戏和“提线木偶”</i>。</p>
+                <h3>方言</h3>
+                <blockquote>"通用语言为普通话，闽南话为主要地方方言，并存莆仙话、客家话等多种地方方言。泉州方言是泉州文化的主要载体，也是泉州历史文化遗产的一个重要组成部分，历史上的泉州方言曾是闽南方言代表。泉州当地的语言是闽南语。"</blockquote>
               </div>
-              <div class="product-grid">
-                <a id='show2' href='images/costums-古民居.jpeg'><img  src="./images/costums-古民居.jpeg" alt="建筑文化-古民居" /></a>
-                <h4>古民居</h4>
-                <p>泉州古建筑中最有地方特色的是泉州民居建筑，尤其是贵族、官僚、富豪、士大夫阶层中的文人、画家，他们的宅第规模可观，形式讲究，其造型、格局、技艺、用材等都蕴含着某个特定时代的文化气质</p>
+              <div id="section-2">
+                <hr/>
+                <h2 class="mytextshadow">家乡风貌</h2>
+                <h3>古民居</h3>
+                <p>泉州古建筑中最有地方特色的是泉州民居建筑，尤其是贵族、官僚、富豪、士大夫阶层中的文人、画家，他们的宅第规模可观，形式讲究，其造型、格局、技艺、用材等都蕴含着某个特定时代的文化气质。</p>
+                <p>千百年来，民风民俗的传承衍化，使泉州民居建筑自成一派天然风韵。有三开间或五开间红砖白石双坡曲燕尾脊的汉式古大厝，有“手巾寮”的纵向住宅，有骑楼式的商住合一的建筑，还有与山村环境十分协调的“吊脚楼”（木楼），他们就地取材，十分简朴，却独具风格。还有一种是外围护有高大坚固防御墙体，适应大家族集居特殊形式的土楼建筑中西合璧的住宅称“洋楼、番仔楼”。</p>
+                <p>代表地：蔡氏古民居、杨阿苗故居、黄宗汉故居、李光地故居、林路大厝等。</p>
+                <h3>古寺庙</h3>
+                <p>泉州有“泉南佛国”、“闽南蓬莱”之名。这些宗教既在泉州建造了大量宗教活动场所，还造就了许多著名的宗教人士和专家学者，不少高僧、高道受到朝廷的荣誉封号，许多著作成为珍贵的宗教典籍。同时，又留有大量胜迹、文物，成为重要的旅游资源和珍贵的学术研究资料。</p>
+                <p>代表地：开元寺、承天寺、清净寺、天后宫、草庵等。</p>
+                <img src="./images/costums-ancient-house.jpeg" alt="古民居" width="128" height="128" style="display: inline-block;"/>
+                <img src="./images/costums-ancient-temple.jpg" alt="古民居" width="128" height="128" style="display: inline-block;"/>
+                <img src="./images/costums-ancient-temple2.jpg" alt="古民居" width="128" height="128" style="display: inline-block;"/>
               </div>
-              <div class="product-grid">
-                <a id='show3' href='images/costums-古寺庙.jpg'><img src="./images/costums-古寺庙.jpg" alt="建筑文化-古寺庙" /></a>
-                <h4>古寺庙</h4>
-                <p>泉州有“泉南佛国”、“闽南蓬莱”之名。这些宗教既在泉州建造了大量宗教活动场所，还造就了许多著名的宗教人士和专家学者，不少高僧、高道受到朝廷的荣誉封号，许多著作成为珍贵的宗教典籍。</p>
+              <div id="section-3" >
+                <hr/>
+                <h2 class="mytextshadow">家乡土特产品</h2>
+                <table class="mytable1">
+                  <tbody>
+                  <tr><th class="mytable1-td">类型</th><th>代表</th></tr>
+                  <tr>
+                    <td class="mytable1-td">特色主食</td>
+                    <td>咸饭、萝卜饭、芥菜饭、花菜饭、卤肉饭，芋仔饭、壶仔饭、泉州炒饭、鱼仔粥、鸭仔粥、卤面、面线糊、湖头米粉、豆签、浮果、粉团、豆粽、甜粽、肉粽、番薯粉粿条、澳茄粿、酸菜鸡丝面、浮粿。</td>
+                  </tr>
+                  <tr>
+                    <td class="mytable1-td">特色汤类</td>
+                    <td>贡丸、鱼丸（深沪水丸）、元宵丸、永春白鸭汤、黑豆龙骨汤、苦菜大肠汤、马鲛羹、墨鱼羹、香菇豆猪舌汤、灌肠仔汤、石狮牛肉羹、藕段排骨汤、萝卜排骨汤、玉米排骨汤、水豆腐汤、七彩干贝汤、肉燕汤、猪血汤。</td>
+                  </tr>
+                  <tr>
+                    <td class="mytable1-td">特色包子</td>
+                    <td>水晶包、肉夹包、东方包、菜包、水煎包。</td>
+                  </tr>
+                  <tr>
+                    <td class="mytable1-td">特色素菜</td>
+                    <td>安溪水瓮菜、润饼菜、窖菜、德化淮山、凉拌苦瓜、辣油笋菜、蒜泥茄子、香油拌海带。</td>
+                  </tr>
+                  <tr>
+                    <td class="mytable1-td">特色荤菜</td>
+                    <td>洪濑鸡爪、崇武鱼卷、西街田螺、姜母鸭、鳗鱼干炖猪脚、焖猪肘、烘猪脚、牛排（有别于西餐牛排）、水门巷炖羊肉、猪血小肠、蚝（东石蚝）（浔埔蚝）、清蒸金枪鱼、文蛤蒸蛋、酱香花蛤、蒸油蛤、炒泥蚶、蒸苦螺、炒竹蛏、炒大头螺、沙鱼冻、芥菜炒虾皮、十香全鸭、香芋焖鸭。</td>
+                  </tr>
+                  <tr>
+                    <td class="mytable1-td">特色甜品</td>
+                    <td>石花膏、茜草粿（仙草密）、桔红糕、绿豆饼、粕丸、麻糍（麻吉）、榜舍龟、碗糕、花生汤、豆沙饼、石狮塘头甜粿、石狮芋圆、芋饼、芋蓉（芋泥）、土笋冻、柿饼、菜头酸、糖醋莲藕片、贡糖、椰子饼、雪拉膏、四果汤等。</td>
+                  </tr>
+                </tbody>
+                </table>
               </div>
-              <div class="product-grid">
-                <a id='show4' href='images/costums-洪濑鸡爪.jpg'><img src="./images/costums-洪濑鸡爪.jpg" alt="饮食文化-洪濑鸡爪" /></a>
-                <h4>洪濑鸡爪</h4>
-                <p>洪濑鸡爪，是福建省闽南地区汉族传统风味小吃，产于福建省南安市洪濑镇。南安的洪濑镇因卤味鸡爪而出名，所以其又被称为“洪濑鸡爪”。这道看似平凡的小吃，背后却有一套严谨的制作工艺。因此，才有鸡爪透骨香、筋道浓郁的口味。</p>
+              <div id="section-4">
+                <h2 class="mytextshadow">家乡经济</h2>
+                <div style="margin-left: 20px;">
+                  <ol>
+                    <li><p>2019年，泉州市实现地区生产总值（GDP）9946.66亿元，按可比价格计算，比上年增长8.0%，经济总量连续21年保持全省第一。其中，第一产业增加值218.61亿元，增长2.4%；第二产业增加值5855.27亿元，增长8.3%；第三产业增加值3872.78亿元，增长7.8%。第一、二、三产业对GDP增长的贡献率分别为0.7%、63.0%和36.3%，分别拉动GDP增长0.1个、5.0个和2.9个百分点。三次产业比例为2.2：58.9：38.9。按常住人口计算，人均地区生产总值114067元（按年平均汇率折合16535美元），比上年增长7.4%。</p></li>
+                    <li><p>2019年，泉州市一般公共预算收入457.75亿元，比上年减收16.41亿元，下降3.5%，加上上划中央税收收入381.22亿元，全市一般公共预算总收入合计完成838.97亿元，比上年减收22.07亿元，下降2.6%。一般公共预算支出658.25亿元，比上年增长25.86亿元，增长4.1%。其中，教育支出150.91亿元，增长1.9%。政府性基金收入315.69亿元，政府性基金支出376.10亿元。税务部门组织各项收入956.30亿元，比上年增长2.3%，其中，税收收入756.88亿元，下降5.5%。海关代征税收收入125.04亿元，下降13.4%。</p></li>
+                    <li><p>2019年，泉州市固定资产投资比上年增长6.3%。</p></li>
+                    <li><p>2019年，泉州市居民人均可支配收入39155元，比上年<span style="color:red;">增长8.5%</span>；人均消费支出25447元，<span style="color:red;">增长9.3%</span>；人均住房建筑面积69.0平方米。按常住地分，全市城镇居民人均可支配收入49592元，增长7.5%，人均消费支出30754元，<span style="color:red;">增长9.1%</span>，人均住房建筑面积65.3平方米；农村居民人均可支配收入22142元，<span style="color:red;">增长9.2%</span>，人均消费支出16794元，<span style="color:red;">增长8.3%</span>。 </p></li>
+                  </ol>
+                </div>
               </div>
-              <div class="product-grid">
-                <a id='show5' href='images/costums-崇武鱼卷.jpg'><img src="./images/costums-崇武鱼卷.jpg" alt="饮食文化-崇武鱼卷" /></a>
-                <h4>崇武鱼卷</h4>
-                <p>崇武鱼卷是福建闽南传统的特色名小吃，属于泉州十大名小吃之一，其主要原料为精选优质鱼，其中又以马鲛、鳗、鲨等最佳，高质量的鱼卷，入口柔润清脆，咀嚼时齿颊留香，既没见鱼肉，也不含腥味，有一种特有的清鲜滋味。</p>
+              <div id="section-5">
+                <hr/>
+                <h2 class="mytextshadow">家乡教育</h2>
+                <iframe  src="http://jyj.quanzhou.gov.cn/" width="100%" height="300px" name="edu_quanzhou"></iframe>
+                <button class="btn-info"><a class="mya1" href="http://jyj.quanzhou.gov.cn/" target="edu_quanzhou">泉州市教育局首页</a></button>
+              </div>
+              <div id="section-6">
+                <h2 class="mytextshadow">历史名人</h2>
+                <table class="mytable2">
+                  <tr><th >人物名称</th><th>生活年代</th><th>主要成就</th></tf></tr>
+                  <tr><td class="mytable2-td">欧阳詹</td><td class="mytable2-td"><abbr title="唐">755-800年</abbr></td><td>国子监四门助教</td></tr>
+                  <tr><td class="mytable2-td">俞大猷</td><td class="mytable2-td"><abbr title="明">1503-1580年</abbr></td><td>著名爱国将领 抗倭民族英雄</td></tr>
+                  <tr><td class="mytable2-td">李贽</td><td class="mytable2-td"><abbr title="明末清初">1624-1662年</abbr></td><td>杰出思想家和进步史学家</td></tr>
+                  <tr><td class="mytable2-td">郑成功</td><td class="mytable2-td"><abbr title="明末清初">1624-1662年</abbr></td><td>收复台湾 民族英雄</td></tr>
+                  <tr><td class="mytable2-td">张文裕</td><td class="mytable2-td">1910-1992年</td><td>著名原子核物理学家	中国科学院学部委员</td></tr>
+                  <tr><td class="mytable2-td">叶飞</td><td class="mytable2-td">1914-1999年</td><td>军事家、政治家	上将军衔</td></tr>
+                  <tr><td class="mytable2-td">张高丽</td><td class="mytable2-td">1946年-今</td><td>曾任中央政治局常委/td></tr>
+                </table>
+              </div>
+              <div id="section-7">
+                <h2 class="mytextshadow">联系我</h2>
+                <p>如果你想了解更多关于我家乡的事情，可以给我来信哦</p>
+                <p>下面这个表单会把信息发给我哦</p>
+                <form action="MAILTO: chrisjaunes@gmail.com" method="post" enctype="text/plain">
+                  <table>
+                    <tr>
+                      <td><lable for="your-name">姓名：</lable></td>
+                      <td><input type="text" name="your-name" id="your-name" size="20"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="your-sex">性别：</label></td>
+                      <td>
+                        <input type="radio" name="your-sex" value="male" checked>Male
+                        <input type="radio" name="your-sex" value="female">Female
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="your-career">职业:</label></td>
+                      <td>
+                        <select name="your-career" id="your-career">
+                          <option value="student" selected="selected">学生</option>
+                          <option value="teacher">老师</option>
+                          <option value="travel enthusiasts">旅游爱好者</option>
+                          <option value="others">其他</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label>感兴趣的模块: </label></td>
+                      <td>
+                        风土人情<input type="checkbox" name="your-type" value="local customs and practices" /><br/>
+                        家乡风貌<input type="checkbox" name="your-type" value="Hometown style" /><br/>
+                        土特产品<input type="checkbox" name="your-type" value="Local products" /><br/>
+                        家乡经济<input type="checkbox" name="your-type" value="Hometown economy" /><br/>
+                        家乡教育<input type="checkbox" name="your-type" value="Home education" /><br/>
+                        历史名人<input type="checkbox" name="your-type" value="Historical celebrities" /><br/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label>内容：</label></td>
+                      <td><textarea rows="3" cols="30"></textarea></td>
+                    </tr>
+                  </table>
+                  <input class="mybutton1" type="submit" value="发送">
+                  <input class="mybutton1" type="reset" value="重置">
+                </form>
               </div>
             </div>
           </div>
-          <div class="services-sidebar">
-            <h4>目录</h4>
-              <ul>
-                <li>»&nbsp;&nbsp;<a href="#">饮食文化--喝茶</a></li>
-                <li>»&nbsp;&nbsp;<a href="#">饮食文化--绿豆饼</a></li>
-                <li>»&nbsp;&nbsp;<a href="#">饮食文化--猪脚饭</a></li>
-                <li>»&nbsp;&nbsp;<a href="#">传统文化--草席</a></li>
-                <li>»&nbsp;&nbsp;<a href="#">习俗文化--吃上丁 </a></li>
-                <li>»&nbsp;&nbsp;<a href="#">信仰文化--拜老爷 </a></li>
-                <li>»&nbsp;&nbsp;<a href="#">...... </a></li>
-              </ul>
-            <div class="clear"></div>
-          </div>
         </div>
-        <div class="clear"></div>
       </div>
     </div>
   </div>

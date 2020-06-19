@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="email=no">
+  <title>照片</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="./css/imgbox.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="./css/hjj-style.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="./css/hjj-header.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="./css/hjj-screen.css" rel="stylesheet" type="text/css" media="screen">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="./js/hjj-header.js"></script>
+  <script type="text/javascript">
+    function BigBig(src, width, height) {
+        $('#myModal').on('show.bs.modal', function () {
+            console.log(src);
+            var modal = $(this);
+            modal.find('.modal-dialog').css({'margin-left':(document.body.clientWidth - width*2)/2 + 'px'})
+            modal.find('.modal-body #image').attr("src", src)
+                .attr("width", width*2)
+                .attr("height", height*2);
+        });
+    }
+  </script>
+</head>
+<body>
+  <div id = "div_header"> </div>
+  <script> load_header("div_header") </script>
+  <div class="main-bg">
+    <div class="container">
+      <div class="main-wrp">
+        <div class="artists">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <!-- 轮播（Carousel）指标 -->
+            <ul class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ul>   
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/photo-qsy.jpg" alt="泉州清水岩">
+                <div class="carousel-caption">泉州清水岩</div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo-dhgy.jpg" alt="东湖公园">
+                <div class="carousel-caption">东湖公园</div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo-qys.jpg" alt="清源山">
+                <div class="carousel-caption">清源山</div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo-hjha.jpg" alt="黄金海岸">
+                <div class="carousel-caption">黄金海岸</div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo-dxt.jpg" alt="东西塔">
+                <div class="carousel-caption">东西塔</div>
+              </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div> 
+          <div class="product-grids">
+            <div>
+              <h2>历史名胜古迹</h2>
+              <p>点击图片可以放大</p>
+              <div class="product-grid">
+                <img onclick="BigBig(this.src, this.width, this.height);" data-target="#myModal" data-toggle="modal"  src="./images/photo-qsy.jpg" alt="泉州清水岩" />
+                <h4>清水岩</h4>
+                <p>国家AAAA级旅游景点，始建于北宋，在明代重建过。北宋的神僧普足禅师曾在此修行，见泉水清冽，于是改名建寺</p>
+              </div>
+              <div class="product-grid">
+                <img onclick="BigBig(this.src, this.width, this.height);" data-target="#myModal" data-toggle="modal" src="./images/photo-dhgy.jpg" alt="东湖公园" />
+                <h4>东湖公园</h4>
+                <p>泉州东湖公园是号称“鲤鱼城”之鲤珠所在地，位于泉州城区东北隅，是原泉州十大胜景之“星湖荷香”的遗址</p>
+              </div>
+              <div class="product-grid">
+                <img onclick="BigBig(this.src, this.width, this.height);" data-target="#myModal" data-toggle="modal" src="./images/photo-qys.jpg" alt="清源山" />
+                <h4>清源山</h4>
+                <p>5A国家重点风景区是泉州十八景之一，也是国家级重点风景名胜区，由清源山、九日山、灵山圣墓三大片区组成</p>
+              </div>
+              <div class="product-grid">
+                <img onclick="BigBig(this.src, this.width, this.height);" data-target="#myModal" data-toggle="modal" src="./images/photo-hjha.jpg" alt="黄金海岸" />
+                <h4>黄金海岸</h4>
+                <p>黄金海岸度假村位于台湾海峡西岸石狮市永宁镇海滨, 是福建省十大重点旅游景区之一</p>
+              </div>
+              <div class="product-grid">
+                <img onclick="BigBig(this.src, this.width, this.height);" data-target="#myModal" data-toggle="modal" src="./images/photo-dxt.jpg" alt="东西塔" />
+                <h4>东西塔</h4>
+                <p>泉州东西塔是镇国塔、仁寿塔的合成，是中国现存最高的一对石塔，位于泉州市区西街泉州开元寺内。表现了宋代泉州石构建筑和石雕艺术的高度成就，是中国古代石构建筑瑰宝。</p>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-body" align="center">
+                <img src="" id="image">
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2>一起合影</h2>
+            <p style="text-indent: 0;">如果你来到过我的家乡，不如上传个合影吧</p>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <a href="javascript:;" class="file">选择合影 <input type="file" name="img" required> </a>
+                <br/>
+                <img id="img"  src="">
+              </div>
+            </div>
+            <script type="text/javascript">
+                var img = document.querySelector('input[name=img]');
+                imgs = document.querySelector('#img');
+                if(img){
+                    img.addEventListener('change', function() {
+                        var file = this.files[0];
+                        var reader = new FileReader();
+                        reader.addEventListener("load", function() {
+                            imgs.src = reader.result;
+                        }, false);
+                        reader.readAsDataURL(file);
+                        $("img").eq(1).css("display", "block");
+                    }, false);
+                }
+                $("#img").attr("height", "300px");
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript"> 
+    !function (e, t, a) {
+        function r() {
+            for (var e = 0; e < s.length; e++) 
+                s[e].alpha <= 0 
+                ? (t.body.removeChild(s[e].el), s.splice(e, 1)) 
+                : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, 
+                    s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + 
+                        s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + 
+                        s[e].color + ";z-index:99999");
+            requestAnimationFrame(r)
+        }
+        function n() {
+            var t = "function" == typeof e.onclick && e.onclick;
+            e.onclick = function (e) {t && t(), o(e)}
+        }
+        function o(e) {
+            var a = t.createElement("div");
+            a.className = "heart", 
+            s.push({el: a,x: e.clientX - 5,y: e.clientY - 5,scale: 1,alpha: 1,color: c()}), 
+            t.body.appendChild(a)
+        }
+        function i(e) {
+            var a = t.createElement("style");
+            a.type = "text/css";
+            try {
+                a.appendChild(t.createTextNode(e))
+            } catch (t) {a.styleSheet.cssText = e}
+            t.getElementsByTagName("head")[0].appendChild(a)
+        }
+        function c() {
+            return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+        }
+        var s = [];
+        e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame 
+            || function (e) {setTimeout(e, 1e3 / 60)},
+        i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), 
+        n(), 
+        r()
+    }(window, document);
+</script>
+</html>

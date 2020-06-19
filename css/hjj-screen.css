@@ -11,27 +11,34 @@
 	-o-transition:all .2s linear; /* opera */
 	-ms-transition:all .2s linear;
 }
-.home-bg {
-	margin: 0;
-	padding: 0;
-	background:url(../images/home-bg.jpg) no-repeat center 0px fixed;
-	background-size: cover;
+.container .carousel-item img{
+    width: 400px;
+    height:300px;
 }
 .product-grids {
 	float: left;
-	width: 82%;
+	width: 100%;
 }
 .product-grid {
 	width: 27.9%;
-	float: left;
+	display: inline-block;
+	vertical-align:top;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border: 1px solid #F1F1F1;
 	padding: 15px;
 	margin: 16px 12px 0px 0px;
+}
+.artists {
+	padding: 20px;
 }
 @media all and (max-width:1260px) and (min-width:1024px){
 	.container{
 		width: 984px;
 		padding: 20px;
+	}
+	.container .carousel-item img{
+		width: 400px;
+		height:300px;
 	}
 	/*Artists*/
 	.artists {
@@ -39,10 +46,10 @@
 	}
 	.product-grids {
 		float: left;
-		width: 78%;
+		width: 100%;
 	}
 	.product-grid {
-		width: 26%;
+		width: 30%;
 	}
 }
 @media all and (max-width:1024px) and (min-width:800px){
@@ -50,18 +57,29 @@
 		width:760px; 
 		padding:20px;
 	}
+	.container .carousel-item img{
+		width: 400px;
+		height:300px;
+	}
 	.artists {
 		padding: 15px;
 	}
 	.product-grids {
 		float: left;
-		width: 70%;
+		width: 100%;
+	}
+	.product-grid {
+		width: 30%;
 	}
 }
 @media all and (max-width:800px) and (min-width:640px){
 	.container{
 		width:600px;
 		padding:20px;
+	}
+	.container .carousel-item img{
+		width: 400px;
+		height:300px;
 	}
 	.artists {
 		padding: 10px;
@@ -84,6 +102,10 @@
 	.container{
 		width:440px;
 		padding:20px;
+	}
+	.container .carousel-item img{
+		width: 400px;
+		height:300px;
 	}
 	.artists {
 		padding: 10px;
@@ -111,6 +133,10 @@
 		width:300px;
 		padding:10px;
 	}
+	.container .carousel-item img{
+		width: 320px;
+		height:240px;
+	}
 	.artists {
 		padding: 10px;
 	}
@@ -119,7 +145,7 @@
 		width: 100%;
 	}
 	.product-grid {
-		width: 42.9%;
+		width: 100%;
 		padding: 10px;
 	}
 	.product-grid:nth-child(3),.product-grid:nth-child(5),.product-grid:nth-child(7),.product-grid:nth-child(9){
@@ -137,6 +163,10 @@
 		width:220px;
 		padding:10px;
 	}
+	.container .carousel-item img{
+		width: 240px;
+		height:180px;
+	}
 	.artists {
 		padding: 10px;
 	}
@@ -145,7 +175,7 @@
 		width: 100%;
 	}
 	.product-grid {
-		width: 42.9%;
+		width: 100%;
 		padding: 10px;
 	}
 	.product-grid:nth-child(3),.product-grid:nth-child(5),.product-grid:nth-child(7),.product-grid:nth-child(9){

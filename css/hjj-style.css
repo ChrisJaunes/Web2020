@@ -1,7 +1,8 @@
 /* reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header,  menu, nav, section {display: block;}
-ol,ul{list-style:none;margin:0;padding:0;}
+/*ol,ul{list-style:none;margin:0;padding:0;}*/
+ol,ul{margin:0;padding:0;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -25,10 +26,160 @@ img{max-width:100%;}
 
 .clear{clear:both;}/* clear float */
 table{border-collapse:collapse;border-spacing:0;}
+.home-bg {
+	margin: 0;
+	padding: 0;
+	background:url(../images/home-bg.jpg) no-repeat center 0px fixed;
+	background-size: cover;
+}
 .main-bg{
-	background:url('../images/main-bg.jpg');
+	background-image:url('../images/main-bg.jpg');
 }
 .main-wrp{
     background:#fff;
     box-shadow:0px 0px 10px #555;
+}
+.container hr{
+    background-color: cornflowerblue!important;
+}
+.container h1{
+    font-family:FZShuTi, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+.container h2{
+    font-family:FZShuTi, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+.container h3{
+    font-family:FZShuTi, Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+.container h4{
+    font-family:FZShuTi, Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
+}
+.container p{
+    text-indent:2em;
+}
+.container li p{
+    text-indent: 0px;
+}
+.container ol{
+    list-style-type:lower-alpha;
+}
+.container li a::before {
+    content: url(../images/i1.svg);
+}
+.container a.mya1{
+    color: white;
+}
+.container a.mya1::after{
+    content: url(../images/i2.svg);
+}
+.mytable1, .mytable1 tr, .mytable1 th, .mytable1 td{
+    border:1px solid #0094ff;
+}
+.mytable1{
+    width: 100%; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;
+}
+.mytable1 th{
+    background-color:bisque;
+}
+.mytable1 .mytable1-td{
+    width: 20%;
+}
+.mytable2{
+    width: 100%; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;
+}
+.mytable2 th{
+    background-color: cornflowerblue;
+}
+.mytable2 .mytable2-td{
+    width: 20%;
+}
+.container .mytextshadow{
+    text-shadow: 5px 5px 5px blueviolet;
+}
+.container .carousel-item{
+    text-align: center!important;
+}
+@keyframes mykeyframes1
+{
+	0%   {color:yellow;}
+	25%  {background:yellow; color: yellowgreen;}
+	50%  {background:yellowgreen; color: grey;}
+    75%  {background: grey; color:black;}
+	100% {background: white;}
+}
+@-moz-keyframes mykeyframes1 /* Firefox */
+{
+	0%   {color:yellow;}
+	25%  {background:yellow; color: yellowgreen;}
+	50%  {background:yellowgreen; color: grey;}
+    75%  {background: grey; color:black;}
+	100% {background: white;}
+}
+.container h1{
+    animation:mykeyframes1 5s;
+	-moz-animation:mykeyframes1 5s; /* Firefox */
+}
+.mybutton1{
+    font-family:"Arial", "Tahoma", "微软雅黑", "雅黑"; 
+    border:0; 
+    vertical-align:middle; 
+    margin:8px; 
+    line-height:18px; 
+    font-size:18px;
+    width:143px; 
+    height:40px; 
+    background:url("../images/mybutton1.jpg") no-repeat left top; 
+    color:#FFF;
+}
+.file {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+
+.product-grid h4{
+	text-align:center;
+	color: #585252;
+	font-size:18px;
+	text-transform: uppercase;
+	padding:20px 0px 10px;
+	font-weight:bold;
+	font-family: 'Carrois Gothic SC', sans-serif;
+	-webkit-transition: all .9s;
+	-moz-transition: all .9s;
+	-o-transition: all .9s;
+	-ms-transition: all .9s;
+	transition: all .9s;
+}
+.product-grid h4:hover{
+	color: #00df37;
+	cursor:pointer;
+}
+.product-grid:hover{
+	box-shadow:0px 0px 10px #F1F1F1;
 }

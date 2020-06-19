@@ -31,16 +31,30 @@
         left: 50%;
         transform: translate(-50%,-50%);
         border-radius: 25%;
-        line-height: 300px;
         text-align: center;
+    }
+    .welcome-panel .empty,
+    .welcome-panel .text {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: middle;
+      font-family: FZShuTi, Arial, Helvetica, sans-serif; 
+      font-size:2em;
+    }
+    .welcome-panel .empty {
+      height: 100%;
     }
 </style>
 </head>
 <body class = "home-bg">
-  <div id = "div_header"> </div>
-  <script> load_header("div_header") </script>
   <div class="outer-wrap">
-    <div class="welcome-panel">欢迎来到我的家乡</div>
+    <div id = "div_header"> </div>
+    <script> load_header("div_header") </script>
+    <div class="welcome-panel">
+      <span class="empty"></span>
+      <span class="text">欢迎来到我的家乡<br/> 泉州</span>
+    </div>
   </div>
 </body>
 </html>
