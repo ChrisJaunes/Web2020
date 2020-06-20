@@ -36,7 +36,7 @@ function addMsgStorage(yourname, id) {
 }
 function loadMsgStorage(id) {
     if(msg_arr.lenth == 0) return;
-
+    setCookie('msg-cookie', JSON.stringify(msg_arr));
     if(document.getElementById("message-board")) 
         document.getElementById("message-board").remove();
     var table=document.createElement("table");
@@ -98,22 +98,15 @@ function drag_init($) {
 	var colors = ['#96C2F1', '#BBE1F1', '#E3E197', '#F8B3D0', '#FFCC00'];
 	var createItem = function(text){
 		var color = colors[parseInt(Math.random() * 5, 10)]
-		$('<div class="item"><p>'+ text +'</p><a href="#">关闭</a></div>').css({ 'background': color, "pointer-events": "auto" }).appendTo(container).drag();
+		$('<div class="item"><p>'+ text +'</p><a href="#" class="item-close">关闭</a></div>').css({ 'background': color, "pointer-events": "auto" }).appendTo(container).drag();
 	};
     $.fn.drag = function () {		
         var $this = $(this);
-        console.log($this);
         var parent = $this.parent();
-        console.log(parent)
         var pw = parent.width();
         var ph = parent.height();
         var thisWidth = $this.width() + parseInt($this.css('padding-left'), 10) + parseInt($this.css('padding-right'), 10);
         var thisHeight = $this.height() + parseInt($this.css('padding-top'), 10) + parseInt($this.css('padding-bottom'), 10);
-        console.log(pw)
-        console.log(ph)
-        console.log($this.width())
-        console.log(thisWidth)
-        console.log(thisHeight)
 
 
         var x, y, positionX, positionY;
@@ -161,8 +154,6 @@ function drag_init($) {
             } else {
                 return;
             }
-            console.log(moveX)
-            console.log(pw - thisWidth)
             if (moveX < 0) {
                 $this.css({
                     "left": "0"
@@ -188,9 +179,9 @@ function drag_init($) {
 	
 	var init = function () {
         container = $('#container');
-        container.on('click','a',function () {
+        container.on('click','a.item-close',function () {
 			$(this).parent().remove();
-		}).height($(window).height() -204);
+		});
 
 		var tests = ['欢迎来到论坛', '随便说点什么吧'];
 		$.each(tests, function (i,v) {
