@@ -9,6 +9,7 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="format-detection" content="email=no">
   <title>我的家乡地图</title>
+  <link rel="icon" type="image/png" href="images/tab.png" />
   <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="./css/hjj-style.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="./css/hjj-header.css" rel="stylesheet" type="text/css" media="all"/>
@@ -17,6 +18,7 @@
   <script src="./js/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/hjj-header.js"></script>
+  <script src="./js/hjj-footer.js"></script>
 </head>
 <body class="main-bg">
   <div id = "div_header"> </div>
@@ -24,11 +26,16 @@
   <div class="container">
     <div class="main-wrp">
       <div class="artists">
-        <iframe width="100%" height="400px" src="map-baidu.html"></iframe>
-        <div class="clear"></div>
+        <div clss="row">
+          <iframe class="col-12 col-md-6" width="48%" height="400px" src="map-baidu.html" style="float:left;"></iframe>
+          <iframe class="col-12 col-md-6" width="48%" height="400px" src="map-google.html" style="float:right;"></iframe>
+        </div>
+        <div class="clear">tips: 由于我国网络环境，右边google map不一定能够正常显示</div>
       </div>
     </div>
     <div class="clear"></div>
   </div>
+  <div id = "div_footer"> </div>
+  <script> load_footer("div_footer") </script>
 </body>
 </html>

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="email=no">
+  <title>联系我们</title>
+  <link rel="icon" type="image/png" href="images/tab.png" />
+  <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="./css/hjj-style.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="./css/hjj-header.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="./css/hjj-screen.css" rel="stylesheet" type="text/css" media="screen">
+  <style>
+  .item {
+		width: 200px;
+		height: 200px;
+		line-height: 30px;
+		-webkit-border-bottom-left-radius: 20px 500px;
+		-webkit-border-bottom-right-radius: 500px 30px;
+		-webkit-border-top-right-radius: 5px 100px;
+		-moz-border-bottom-left-radius: 20px 500px;
+		-moz-border-bottom-right-radius: 500px 30px;
+		-moz-border-top-right-radius: 5px 100px;
+		box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+  .container p{
+    font-family: FZShuTi, Arial, Helvetica, sans-serif;
+  }
+  </style>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/hjj-header.js"></script>
+  <script src="./js/hjj-footer.js"></script>
+</head>
+<body class = "main-bg">
+  <div id = "div_header"> </div>
+  <script> load_header("div_header") </script>
+  <div class="container">
+    <div class="main-wrp">
+      <div class="artists">
+        <div>
+          <h3>Hello Hometown</h3>
+          <div style="width: 80%; margin: 0 auto;">
+            <pre >
+实验内容
+写一个网页集，介绍自己的家乡，包括以下部分板块：
+  风土人情、家乡风貌、家乡土特产品、家乡经济、家乡教育、文化传承、历史名人大事、历史名胜古迹、家乡社区与论坛
+要求：
+  使用HTML所有标签、CSS主要属性
+  应用Javascript实现动态与交互
+  使用 prototype.js 中的 DOM 事件句柄函数
+  使用简单的cookie实现待办事项功能
+  使用地图完成社区模块
+考核点
+  制作网页集
+  独立CSS控制样式
+  实现简单的论坛功能
+  嵌入地图定位家乡位置
+  用JavaScript实现动态效果和用户交互           
+            </pre>
+          </div>
+          <div style="width: 80%; margin: 0 auto; ">
+            <p style="line-height: 1.5em;">本大作业介绍笔者的家乡,主要基于上述要求，其内容和信息来源 主要依据：百度百科、笔者的生活常识。</p>
+            <p>本大作业主要基于课堂教学、w3school、runoob、bootstrap开发文档、jquery开发文档、百度地图开发文档、google地图开发文档、以及各路博客</p>
+            <p>本大作业将于2020年06月21日以后在github上开源，欢迎访问和收藏: <a href="https://github.com/hjj1871984569/Web2020">https://github.com/hjj1871984569/Web2020</a></p>
+            <p>本大作业于2020年08月前将一直部署在阿里云，可以通过<a href="http://47.94.10.214:8080/Web2020">http://47.94.10.214:8080/Web2020</a>访问</p>
+            <p>如果你想了解更多我家乡的事情，可以通过通过下面的搜索框搜索更多资料
+              <div class="mysearch">
+                <form action="https://www.baidu.com/" method="GET">
+                  <input type="text" value="keyword here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'keyword here';}">
+                  <input type="submit" value="Search">
+                </form>
+              </div>
+            </p>
+            <p>谢谢</p>          
+          </div>
+          <div></div>
+          <div class="nav2">
+            <p style="display:inline-block">欢迎分享：</p>
+            <ul>
+              <style>
+                .share-item{
+                  height: 50px;
+                }
+                a.share-item::before{
+                  content:url() !important;
+                }
+              </style>
+                <li>
+                  <a class="share-item" href="http://v.t.sina.com.cn/share/share.php?title=哇,分享一下" target="_blank"><img src="./images/xinlang_logo.png" alt="新浪微博" title="新浪微博"/></a>
+                </li>
+                <l>
+                  <a class="share-item" href="http://connect.qq.com/widget/shareqq/index.html?title=哇,分享一下&url=123" target="_blank"><img src="./images/qq_logo.png" alt="QQ好友" title="QQ好友"/></a></li>
+                <li>
+                  <a class="share-item" href="javascript:window.open('http://twitter.com/home?status='+encodeURIComponent(document.location.href)+' '+encodeURIComponent(document.title));void(0)">
+                    <img src="./images/twitter_logo.png" alt="twitter" title="twitter">
+                  </a>
+                </li>
+                <li">
+                  <a class="share-item" class="fav_facebook" rel="nofollow" href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(document.location.href)+'&t='+encodeURIComponent(document.title));void(0)">
+                    <img src="./images/fackbook_logo.png" alt="fackbook" title="fackbook"/>
+                  </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id = "div_footer"> </div>
+  <script> load_footer("div_footer") </script>
+</body>
+</html>

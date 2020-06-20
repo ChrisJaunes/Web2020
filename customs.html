@@ -9,56 +9,13 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="format-detection" content="email=no">
   <title>风俗</title>
+  <link rel="icon" type="image/png" href="images/tab.png" />
   <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="./css/imgbox.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="./css/hjj-style.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="./css/hjj-header.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="./css/hjj-screen.css" rel="stylesheet" type="text/css" media="screen">
   <style>
-    /* Custom Styles */
-    ul.nav-tabs{
-      width: 150px;
-      margin-top: 20px;
-      border-radius: 4px;
-      border: 1px solid #ddd;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
-    }
-    ul.nav-tabs li{
-      margin: 0;
-      border-top: 1px solid #ddd;
-      width: auto;
-      float: none;
-    }
-    ul.nav-tabs li:first-child{
-      border-top: none;
-    }
-    ul.nav-tabs li a{
-      margin: 0;
-      padding: 8px 16px;
-      line-height:2.5;
-      border-radius: 0;
-    }
-    ul.nav-tabs li.active, ul.nav-tabs li:hover{
-      color: #fff;
-      background: #0088cc;
-      border: 1px solid #0088cc;
-    }
-    ul.nav-tabs li.active, ul.nav-tabs li a:hover{
-      color: #fff;
-    }
-    ul.nav-tabs li:first-child a{
-      border-radius: 4px 4px 0 0;
-    }
-    ul.nav-tabs li:last-child a{
-      border-radius: 0 0 4px 4px;
-    }
-    ul.nav-tabs.affix{
-      top: 30px; 
-      position: sticky;
-    }
-    ul.nav-tabs.affix-top{
-      top: 30px; 
-    }
     div.section-1, div.section-2, div.section-3, div.section-4, div.section-5, div.section-6 {
       margin-top: 10px;
     }
@@ -66,6 +23,7 @@
   <script src="./js/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/hjj-header.js"></script>
+  <script src="./js/hjj-footer.js"></script>
 </head>
 <body>
   <div id = "div_header"> </div>
@@ -77,13 +35,13 @@
           <div class="row">
             <nav class="col-12 col-md-4 col-lg-2" id="myScrollspy">
               <ul class="nav nav-tabs flex-column affix" id="myScrollspy-ul">
-                <li><a href="#section-1">风土人情</a></li>
-                <li><a href="#section-2">家乡风貌</a></li>
-                <li><a href="#section-3">土特产品</a></li>
-                <li><a href="#section-4">家乡经济</a></li>
-                <li><a href="#section-5">家乡教育</a></li>
-                <li><a href="#section-6">历史名人</a></li>
-                <li><a href="#section-7">联系我们</a></li>
+                <li><a href="#section-1" title="本处主要是文本标签使用">风土人情</a></li>
+                <li><a href="#section-2" title="本处主要是图片标签使用">家乡风貌</a></li>
+                <li><a href="#section-3" title="本处主要是表格标签使用">土特产品</a></li>
+                <li><a href="#section-4" title="本处主要是列表标签使用">家乡经济</a></li>
+                <li><a href="#section-5" title="本处主要是框架标签使用">家乡教育</a></li>
+                <li><a href="#section-6" title="本处主要是特殊标签使用">历史名人</a></li>
+                <li><a href="#section-7" title="本处主要是表单标签使用">联系我们</a></li>
               </ul>
             </nav>
             <div class="col-12 col-md-8 col-lg-10" >
@@ -173,14 +131,14 @@
                   <tr><td class="mytable2-td">郑成功</td><td class="mytable2-td"><abbr title="明末清初">1624-1662年</abbr></td><td>收复台湾 民族英雄</td></tr>
                   <tr><td class="mytable2-td">张文裕</td><td class="mytable2-td">1910-1992年</td><td>著名原子核物理学家	中国科学院学部委员</td></tr>
                   <tr><td class="mytable2-td">叶飞</td><td class="mytable2-td">1914-1999年</td><td>军事家、政治家	上将军衔</td></tr>
-                  <tr><td class="mytable2-td">张高丽</td><td class="mytable2-td">1946年-今</td><td>曾任中央政治局常委/td></tr>
+                  <tr><td class="mytable2-td">张高丽</td><td class="mytable2-td">1946年-今</td><td>曾任中央政治局常委</td></tr>
                 </table>
               </div>
               <div id="section-7">
                 <h2 class="mytextshadow">联系我</h2>
                 <p>如果你想了解更多关于我家乡的事情，可以给我来信哦</p>
                 <p>下面这个表单会把信息发给我哦</p>
-                <form action="MAILTO: chrisjaunes@gmail.com" method="post" enctype="text/plain">
+                <form action="MAILTO: 201836600130@scut.edu.com" method="post" enctype="text/plain">
                   <table>
                     <tr>
                       <td><lable for="your-name">姓名：</lable></td>
@@ -229,6 +187,8 @@
         </div>
       </div>
     </div>
+  <div id = "div_footer"> </div>
+  <script> load_footer("div_footer") </script>
   </div>
 </body>
 </html>
